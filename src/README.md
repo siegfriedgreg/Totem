@@ -1,4 +1,4 @@
-FROM the /build/bin foler:
+FROM the /build/bin foler: (view in the raw format)
 
 
 Usage: ./benchmark [options] graph_file
