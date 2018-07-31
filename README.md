@@ -6,6 +6,11 @@ To run on PSC Bridges do the following.
 GTEST=/..../Totem/src/thirdparty/googletest/googletest
 DATAFOLDER=/..../Totem/data
 
+graph data needs to be converted to the *.totem format. The first three lines need such:
+#Nodes:100
+#Edges:395
+#Directed or Undirected
+
 1) clone the repository to your directory
 2) go to the Totem/src/thirdparty and unpack the google test zip into the thirdparty folder.
 3) load the gcc/5.3 and cuda/8.0 modules.
