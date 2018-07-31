@@ -9,8 +9,8 @@ DATAFOLDER=/..../Totem/data
 1) clone the repository to your directory
 2) go to the Totem/src/thirdparty and unpack the google test zip into the thirdparty folder.
 3) load the gcc/5.3 and cuda/8.0 modules.
-4) run "make" from Totem/src/
-5) interact and load modules in same order (gcc / cuda).
+4) run "make" from Totem/src/ (many WARNINGS present).
+5) interact --gpu(check if modules are loaded. be sure to add in same order as step 3!)
 6) to run move to the build/bin folder: ./benchmark -h for help
 Usage: ./benchmark [options] graph_file
 
