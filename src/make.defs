@@ -14,6 +14,9 @@
 #
 #--------------------------------------------------------------------------
 
+GTEST=/pylon5/cc3uv3p/gsiegfri/projectGPA/totem/src/thirdparty/googletest/googletest
+DATAFOLDER=/pylon5/cc3uv3p/gsiegfri/projectGPA/totem/data
+
 # The path to the root directory must be defined by the makefile that includes
 # this file.
 ifndef ROOTDIR
@@ -88,10 +91,12 @@ else
 endif
 
 # Compilers.
-CUDA_INSTALL_PATH = /usr/local/cuda
+######  CUDA_INSTALL_PATH = /usr/local/cuda
+CUDA_INSTALL_PATH = "$(shell dirname $(NVCC))/.."
 C   = gcc
 CC   = g++
-NVCC = $(CUDA_INSTALL_PATH)/bin/nvcc
+######  NVCC = $(CUDA_INSTALL_PATH)/bin/nvcc
+NVCC = "$(shell which nvcc)"
 
 # Compilation and linking flags.
 CFLAGS    := $(CFLAGS) -g -fopenmp $(OPTFLAGS) -Wall -Wno-format -O3 \
