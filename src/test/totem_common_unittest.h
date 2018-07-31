@@ -9,7 +9,7 @@
 #define TOTEM_COMMON_UNITTEST_H
 
 // system includes
-#include "../thirdparty/googletest/googletest/include/gtestgtest.h"
+#include "gtest/gtest.h"
 
 // totem includes
 #include "totem.h"
