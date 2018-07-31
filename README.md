@@ -6,10 +6,22 @@ To run on PSC Bridges do the following.
 GTEST=/..../Totem/src/thirdparty/googletest/googletest
 DATAFOLDER=/..../Totem/data
 
-graph data needs to be converted to the *.totem format. The first three lines need such:
-#Nodes:100
-#Edges:395
-#Directed or Undirected
+graph data needs to be converted to the *.totem format. The first three lines need for unweighted:
+#Nodes: 1000
+#Edges: 1998
+#Undirected
+0 1
+1 0
+1 2
+
+for weighted:
+#Nodes:102
+#Edges:290
+#Directed
+0 1 300
+1 14 37
+1 12 20
+
 
 1) clone the repository to your directory
 2) go to the Totem/src/thirdparty and unpack the google test zip into the thirdparty folder.
