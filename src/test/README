@@ -1,3 +1,10 @@
+MODIFIED THE LAST LINES OF TEST FILES!!!
+commented out the TEST_P functions, as per google documentation.
+
+
+
+
+
 The assumptions is that unit tests have the following naming format:
 totem_[test_name]_unittest.cc 
 Based on this, running make only will generate a single all.test binary that
