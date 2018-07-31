@@ -105,6 +105,6 @@ INSTANTIATE_TEST_CASE_P(StressCentralityGPUAndCPUTest, StressCentralityTest,
 // From Google documentation:
 // Google Test may not support value-parameterized tests with some
 // compilers. This dummy test keeps gtest_main linked in.
-TEST_P(DummyTest, ValueParameterizedTestsAreNotSupportedOnThisPlatform) {}
+// TEST_P(DummyTest, ValueParameterizedTestsAreNotSupportedOnThisPlatform) {}
 
 #endif  // GTEST_HAS_PARAM_TEST
