@@ -387,7 +387,7 @@ error_t stress_unweighted_cpu(const graph_t* graph,
           }
         }
       }
-      OMP(omp parallel for)
+      // COMMENTED OUT!!!  ->  OMP(omp parallel for)
       for (vid_t v = 0; v < graph->vertex_count; v++) {
         if (v != source && dists[v] == dist) {
           stress_centrality[v] += 1.0 * sigma[v] * delta[v];
