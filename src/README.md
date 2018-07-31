@@ -1,3 +1,6 @@
+FROM the /build/bin foler:
+
+
 Usage: ./benchmark [options] graph_file
 Options
   -aNUM [0-100] Percentage of edges allocated to CPU partition.
