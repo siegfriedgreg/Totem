@@ -14,8 +14,8 @@
 #
 #--------------------------------------------------------------------------
 
-GTEST=/pylon5/cc3uv3p/gsiegfri/projectGPA/totem/src/thirdparty/googletest/googletest
-DATAFOLDER=/pylon5/cc3uv3p/gsiegfri/projectGPA/totem/data
+GTEST=/pylon5/cc3uv3p/gsiegfri/projectGPA/Totem/src/thirdparty/googletest/googletest
+DATAFOLDER=/pylon5/cc3uv3p/gsiegfri/projectGPA/Totem/data
 
 # The path to the root directory must be defined by the makefile that includes
 # this file.
