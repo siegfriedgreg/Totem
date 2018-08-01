@@ -6,22 +6,20 @@ To run on PSC Bridges do the following.
 GTEST=/..../Totem/src/thirdparty/googletest/googletest
 DATAFOLDER=/..../Totem/data
 
-graph data needs to be converted to the *.totem format. The first three lines need for unweighted:
-#Nodes: 1000
-#Edges: 1998
-#Undirected
-0 1
-1 0
-1 2
+graph data needs to be converted to the *.totem format.
 
-for weighted:
-#Nodes:102
-#Edges:290
-#Directed
-0 1 300
-1 14 37
-1 12 20
-
+ * The following is the totem graph file format template:
+ *
+ * # NODES: vertex_count [Y]
+ * # EDGES: edge_count
+ * # DIRECTED|UNDIRECTED
+ * [VERTEX LIST]
+ * [EDGE LIST]
+ *
+ * The first three lines specify the vertex and edge counts, whether the
+ * graph is directed or not and whether the graph has a vertex list.
+ * Note that the flag [Y] after vertex_count indicates that a vertex list
+ * should be expected.
 
 1) clone the repository to your directory
 2) go to the Totem/src/thirdparty and unpack the google test zip into the thirdparty folder.
