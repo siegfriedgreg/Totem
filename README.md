@@ -8,18 +8,18 @@ DATAFOLDER=/..../Totem/data
 
 graph data needs to be converted to the *.totem format.
 
- * The following is the totem graph file format template:
- *
- * # NODES: vertex_count [Y]
- * # EDGES: edge_count
- * # DIRECTED|UNDIRECTED
- * [VERTEX LIST]
- * [EDGE LIST]
- *
- * The first three lines specify the vertex and edge counts, whether the
- * graph is directed or not and whether the graph has a vertex list.
- * Note that the flag [Y] after vertex_count indicates that a vertex list
- * should be expected.
+ The following is the totem graph file format template:
+ 
+ # NODES: vertex_count [Y]
+ # EDGES: edge_count
+ # DIRECTED|UNDIRECTED
+ [VERTEX LIST]
+ [EDGE LIST]
+ 
+ The first three lines specify the vertex and edge counts, whether the
+ graph is directed or not and whether the graph has a vertex list.
+ Note that the flag [Y] after vertex_count indicates that a vertex list
+ should be expected.
 
 1) clone the repository to your directory
 2) go to the Totem/src/thirdparty and unpack the google test zip into the thirdparty folder.
