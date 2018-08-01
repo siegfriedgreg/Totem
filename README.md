@@ -10,11 +10,11 @@ graph data needs to be converted to the *.totem format.
 
  The following is the totem graph file format template:
  
- # NODES: vertex_count [Y]
- # EDGES: edge_count
- # DIRECTED|UNDIRECTED
- [VERTEX LIST]
- [EDGE LIST]
+       # NODES: vertex_count [Y]
+       # EDGES: edge_count
+       # DIRECTED|UNDIRECTED
+       [VERTEX LIST]
+       [EDGE LIST]
  
  The first three lines specify the vertex and edge counts, whether the
  graph is directed or not and whether the graph has a vertex list.
