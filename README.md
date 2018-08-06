@@ -1,7 +1,7 @@
 # Totem
 A graph processing engine for hybrid CPU and GPU platforms
 
-To run on PSC Bridges do the following. 
+Do the following to run on PSC Bridges:
 (Your personal run will need to modify the make.defs file to point GTEST to your folder locations)
 GTEST=/..../Totem/src/thirdparty/googletest/googletest
 DATAFOLDER=/..../Totem/data
