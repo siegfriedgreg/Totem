@@ -17,7 +17,7 @@ The format for the converter is slightly different than what is mentioned in the
 The *.totem files have the vertex's listed from small to large.
 
 graph data needs to be converted to the *.totem format.
-       USE: 'convert_el2totem.cpp' file to convert '*.el' format into '*.totem' format.
+
        to compile:    g++ -Wall -g -std=c++11 convert_el2totem.cpp -o convert
        USE: ./convert <edge list file> <totem file> -d | -u (for directed or undirected)
 
