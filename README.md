@@ -6,21 +6,24 @@ Do the following to run on PSC Bridges:
 GTEST=/..../Totem/src/thirdparty/googletest/googletest
 DATAFOLDER=/..../Totem/data
 
+The following is the totem graph file format template:
+ 
+       #Nodes: vertex_count
+       #Edges: edge_count
+       #Directed|Undirected
+       [VERTEX LIST] [EDGE LIST]      
+ 
+The format for the converter is slightly different than what is mentioned in the totem_graph.h file.
+The *.totem files have the vertex's listed from small to large.
+
 graph data needs to be converted to the *.totem format.
+       USE: 'convert_el2totem.cpp' file to convert '*.el' format into '*.totem' format.
+       to compile:    g++ -Wall -g -std=c++11 convert_el2totem.cpp -o convert
+       USE: ./convert <edge list file> <totem file> -d | -u (for directed or undirected)
 
- The following is the totem graph file format template:
- 
-       # NODES: vertex_count [Y]
-       # EDGES: edge_count
-       # DIRECTED|UNDIRECTED
-       [VERTEX LIST]
-       [EDGE LIST]
- 
- The first three lines specify the vertex and edge counts, whether the
- graph is directed or not and whether the graph has a vertex list.
- Note that the flag [Y] after vertex_count indicates that a vertex list
- should be expected.
 
+
+TO MAKE TOTEM:
 1) clone the repository to your directory
 2) go to the Totem/src/thirdparty and unpack the google test zip into the thirdparty folder.
 3) load the gcc/5.3 and cuda/8.0 modules.
